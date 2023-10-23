@@ -1,0 +1,91 @@
+.screen-header {
+  margin-top: 60px;
+  position: relative;
+}
+
+.screen-header__btns {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0 20px;
+  position: fixed;
+  top: 70px;
+  z-index: 100;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--blue);
+}
+
+.screen-header__btns i {
+  font-size: 22px;
+}
+
+.screen-header__btns .fa-arrow-right-from-bracket {
+  margin-right: 5px;
+}
+
+.screen-header__title {
+  margin-top: 110px;
+  padding: 0 var(--horizontal-space);
+  font-size: 36px;
+  font-weight: 700;
+}
+
+.search {
+  display: flex;
+  position: relative;
+}
+
+.search__box {
+  margin: 15px var(--horizontal-space);
+  background-color: var(--dark-gray);
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+  width: 100%;
+}
+
+.search .fa-magnifying-glass {
+  color: var(--bright-gray);
+  margin-right: 10px;
+}
+
+.search__input {
+  padding: 0;
+  background-color: var(--dark-gray);
+  font-size: 20px;
+  flex-grow: 1;
+  caret-color: var(--blue);
+}
+
+@keyframes focusSearchInput {
+  to {
+    width: 75vw;
+  }
+}
+
+.search:focus-within .search__box {
+  animation: focusSearchInput 0.2s forwards;
+}
+
+.search__btn {
+  visibility: hidden;
+  position: absolute;
+  color: var(--blue);
+  width: 0;
+}
+
+@keyframes focusSearchBtn {
+  to {
+    visibility: initial;
+    top: 25px;
+    right: 27px;
+    width: initial;
+  }
+}
+
+.search:focus-within .search__btn {
+  will-change: position;
+  animation: focusSearchBtn 0.2s forwards;
+}

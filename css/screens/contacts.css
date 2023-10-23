@@ -1,0 +1,10 @@
+.contacts-screen .divider-row {
+  width: 100%;
+  height: 1px;
+  margin-bottom: 15px;
+  background-color: var(--dark-gray);
+}
+
+.contacts-screen__list {
+  margin-top: 50px;
+}

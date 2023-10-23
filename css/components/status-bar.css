@@ -1,0 +1,38 @@
+.status-bar {
+  background-color: rgba(0, 0, 0, 0);
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  width: 100%;
+  display: flex;
+  padding: 10px 0px;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+
+.status-bar__column {
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.status-bar__column:nth-child(2) {
+  width: 30%;
+  background-color: black;
+  height: 40px;
+  border-radius: 20px;
+}
+
+.status-bar__column:last-child .fa-signal {
+  font-size: 18px;
+}
+
+.status-bar__column:last-child .fa-wifi {
+  margin: 0 13px;
+  font-size: 18px;
+}
+
+.status-bar__column:last-child .fa-battery-three-quarters {
+  font-size: 28px;
+}

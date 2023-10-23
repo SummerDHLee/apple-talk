@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Welcome to Apple Talk</title>
+  </head>
+
+  <body class="login-body">
+    <div class="status-bar">
+      <div class="status-bar__column">
+        <span>08:26</span>
+      </div>
+      <div class="status-bar__column"></div>
+      <div class="status-bar__column">
+        <i class="fa-solid fa-signal fa-lg"></i>
+        <i class="fa-solid fa-wifi fa-lg"></i>
+        <i class="fa-solid fa-battery-three-quarters fa-xl"></i>
+      </div>
+    </div>
+
+    <header class="login-header">
+      <i class="fa-brands fa-apple"></i>
+      <h1 class="login-header__title">Welcome to Apple Talk</h1>
+      <p class="login-header__text">
+        If you have an Apple Account,<br />log in with your account.
+      </p>
+    </header>
+
+    <form class="login-form" action="contacts.html" method="get">
+      <input
+        class="login-form__id"
+        name="id"
+        type="email"
+        placeholder="Apple ID"
+      />
+      <input
+        class="login-form__pw"
+        name="password"
+        type="password"
+        placeholder="Password"
+      />
+      <input class="login-form__btn" type="submit" value="Sign In" />
+      <a class="login-form__link" href="#">Find Apple Account or Password</a>
+    </form>
+
+    <div id="no-mobile">
+      <i class="fa-solid fa-face-sad-tear"></i>
+      <span>This app is only for mobile.</span>
+    </div>
+
+    <script
+      src="https://kit.fontawesome.com/dd4f72c831.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
